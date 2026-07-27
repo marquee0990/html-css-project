@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Despesas do Mês</h1>
+
+        <div class="balance-container">
+            <h2>Balanço</h2>
+            <h1 id="balance">R$0,00</h1>
+
+            <div class="summary">
+                <div class="income">
+                    <h3>Ganhos</h3>
+                    <p id="income-amount">R$0,00</p>
+                </div>
+                <div class="expenses">
+                    <h3>Despesas</h3>
+                    <p id="expense-amount">R$0,00</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="transaction-container">
+                <h2>Transações</h2>
+                <ul id="transaction-list">
+                    <!-- TRANSAÇÕES -->
+
+                </ul>
+            </div>
+            <div class="form-container">
+                <h2>Add Transação</h2>
+
+                <form id="transaction-form">
+                    <div class="form-group">
+                        <label for="description">Descrição</label>
+                        <input type="text" id="description" placeholder="Insira a Descrição..." required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Total</label>
+                        <input type="number" id="amount" placeholder="Insira o total..." required/>
+                        <small>Use o menos (-) para despesas</small>
+                    </div>
+
+                    <button type="submit">Add Transação</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
